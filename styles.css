@@ -1,11 +1,12 @@
 :root {
   --txt-color-1: #fafafa;
   --txt-color-2: #dbdbdb;
-  --bg-color-1: #1c1c1c;
+  --bg-color-1: #171717;
   --bg-color-2: #0f0f0f;
   --accent-color-1: #ff0000;
   --accent-color-2: #950101;
   --accent-color-3: #3d0000;
+  --border-color: #2b2b2b;
 }
 
 * {
@@ -188,6 +189,10 @@ button:hover {
   align-items: center;
 }
 
+.big-nav-bottom svg {
+  height: 1.6rem;
+}
+
 .theme-switch {
   display: flex;
   justify-content: center;
@@ -236,8 +241,8 @@ button:hover {
   transition: 0.2s ease all;
 }
 
-.big-nav-links li a:hover {
-  color: var(--txt-color-1);
+.big-nav-links li a:hover, .active-nav-link a {
+  color: var(--txt-color-1) !important;
   transition: 0.2s ease all;
 }
 
@@ -252,8 +257,8 @@ button:hover {
   transition: 0.2s ease all;
 }
 
-.big-nav-links li:hover::after {
-  width: 100%;
+.big-nav-links li:hover::after, .active-nav-link::after {
+  width: 100% !important;
 }
 
 .search-btn {
@@ -384,6 +389,7 @@ main {
 .main-feed-article {
   background: var(--bg-color-1);
   position: relative;
+  border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   overflow: hidden;
   margin-bottom: 1.3rem;
@@ -401,7 +407,7 @@ main {
   top: 1rem;
   left: 1rem;
   background: var(--accent-color-2);
-  color: #fafafa;
+  color: #fafafa !important;
   padding: 0.2rem 0.4rem;
   border-radius: 0.2rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -476,7 +482,28 @@ main {
 
 .main-sidebar-article-stack {
   background: var(--bg-color-1);
+  border: 1px solid var(--border-color);
   border-radius: 0.5rem;
+}
+
+.main-sidebar-subscribe {
+  background: #c20000;
+  background: linear-gradient(180deg, rgba(194, 0, 0, 1) 0%, rgba(149, 1, 1, 1) 50%, rgba(61, 0, 0, 1) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.main-sidebar-subscribe h2, .main-sidebar-subscribe p {
+  color: #fafafa;
+}
+
+.main-sidebar-subscribe button {
+  height: 2rem;
+  margin-top: 1rem;
 }
 
 footer {
@@ -497,9 +524,8 @@ footer {
 }
 
 .footer-top div {
-  padding: 1rem;
   width: 25%;
-  box-sizing: border-box;
+  padding: 1rem 2rem 1rem 0;
 }
 
 .footer-top hr {

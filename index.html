@@ -65,7 +65,7 @@
             </section>
             <section class="big-nav-bottom-center">
               <ul class="big-nav-links">
-                <li><a href="#">Start</a></li>
+                <li class="active-nav-link"><a href="#">Start</a></li>
                 <li><a href="#">Ekonomi</a></li>
                 <li><a href="#">Nöje</a></li>
                 <li><a href="#">Världen</a></li>
@@ -310,6 +310,11 @@
             </div>
           </article>
         </div>
+        <div class="main-sidebar-subscribe">
+          <h2>Ge oss dina pengar!</h2>
+          <p>Prenumerera nu för att få tillgång till alla artiklar utan reklam.</p>
+          <button>Läs mer</button>
+        </div>
         <div class="main-sidebar-article-stack">
           <h3>Mest lästa</h3>
           <hr>
@@ -350,6 +355,49 @@
             <div class="main-sidebar-article-txt">
               <h4>Poliser har ställt sig på rad</h4>
               <p>1 Augusti - 2025</p>
+            </div>
+          </article>
+        </div>
+        <div class="main-sidebar-article-stack">
+          <h3>Bokrecensioner</h3>
+          <hr>
+          <article>
+            <img src="/images/book1.jpg">
+            <div class="main-sidebar-article-txt">
+              <h4>"17 Juni" - Alex Schulman</h4>
+              <p>12 Juli - 2025</p>
+            </div>
+          </article>
+          <hr>
+          <article>
+            <img src="/images/book2.png">
+            <div class="main-sidebar-article-txt">
+              <h4>"Stacken" - Annika Norlin</h4>
+              <p>11 Juli - 2025</p>
+            </div>
+          </article>
+          <hr>
+          <article>
+            <img src="/images/book3.jpg">
+            <div class="main-sidebar-article-txt">
+              <h4>"Läs" - Katarina Kuick</h4>
+              <p>25 Juli - 2025</p>
+            </div>
+          </article>
+          <hr>
+          <article>
+            <img src="/images/book4.jpg">
+            <div class="main-sidebar-article-txt">
+              <h4>"Hyper" - Agri Ismaïl</h4>
+              <p>35 Juli - 2025</p>
+            </div>
+          </article>
+          <hr>
+          <article>
+            <img src="/images/book5.jpg">
+            <div class="main-sidebar-article-txt">
+              <h4>"Yellowface" - R. F. Kuang</h4>
+              <p>1 Juli - 2025</p>
             </div>
           </article>
         </div>
@@ -417,14 +465,16 @@
       function useDarkMode() {
         document.documentElement.style.setProperty("--txt-color-1", "#fafafa");
         document.documentElement.style.setProperty("--txt-color-2", "#dbdbdb");
-        document.documentElement.style.setProperty("--bg-color-1", "#0f0f0f");
-        document.documentElement.style.setProperty("--bg-color-2", "#171717");
+        document.documentElement.style.setProperty("--bg-color-1", "#171717");
+        document.documentElement.style.setProperty("--bg-color-2", "#0f0f0f");
+        document.documentElement.style.setProperty("--border-color", "#2b2b2b");
       }
       function useLightMode() {
         document.documentElement.style.setProperty("--txt-color-1", "#0f0f0f");
         document.documentElement.style.setProperty("--txt-color-2", "#525252");
         document.documentElement.style.setProperty("--bg-color-1", "#fafafa");
         document.documentElement.style.setProperty("--bg-color-2", "#ededed");
+        document.documentElement.style.setProperty("--border-color", "#e3e3e3");
       }
     </script>
   </body>

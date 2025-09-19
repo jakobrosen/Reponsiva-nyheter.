@@ -1,0 +1,49 @@
+footer {
+  margin-top: auto;
+  background: var(--bg-color-1);
+}
+
+.footer-container {
+  width: 80vw;
+  min-width: 740px;
+  max-width: 1090px;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-top div {
+  width: 25%;
+  padding: 1rem 2rem 1rem 0;
+}
+
+.footer-top hr {
+  margin: 0.5rem 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.footer-bottom hr {
+  width: 100vw;
+}
+
+footer li a {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+footer svg {
+  height: 1rem;
+  padding: 0 0.5rem 0 0;
+} 

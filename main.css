@@ -1,0 +1,132 @@
+main {
+  display: flex;
+  width: 80vw;
+  min-width: 740px;
+  max-width: 1090px;
+  margin: 8.5rem auto 1rem;
+}
+
+.main-feed {
+  width: 70%;
+  margin-right: 1rem;
+}
+
+.main-feed-article {
+  background: var(--bg-color-1);
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+}
+
+.main-feed-article img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--accent-color-2);
+}
+
+.article-category {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--accent-color-2);
+  color: #fafafa !important;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-feed-article div {
+  padding: 0.3rem 1rem 0.8rem;
+}
+
+.main-feed-article h2 {
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+}
+
+.main-feed-article p {
+  color: var(--txt-color-2);
+}
+
+.main-feed-article:hover h2 {
+  color: var(--accent-color-1);
+  transition: 0.2s ease all;
+}
+
+.main-sidebar {
+  width: 30%;
+  min-width: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.main-sidebar h3 {
+  padding: 0.4rem;
+}
+
+.main-sidebar article {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem;
+}
+
+.main-sidebar article img {
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+  border-radius: 0.1rem;
+}
+
+.main-sidebar article div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.main-sidebar article h4 {
+  font-size: 0.9rem;
+}
+
+.main-sidebar article p {
+  font-size: 0.8rem;
+  color: var(--txt-color-2);
+}
+
+.main-sidebar article:hover {
+  cursor: pointer;
+}
+
+.main-sidebar article:hover h4 {
+  color: var(--accent-color-1);
+} 
+
+.main-sidebar-article-stack {
+  background: var(--bg-color-1);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.main-sidebar-subscribe {
+  background: #c20000;
+  background: linear-gradient(180deg, rgba(194, 0, 0, 1) 0%, rgba(149, 1, 1, 1) 50%, rgba(61, 0, 0, 1) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.main-sidebar-subscribe h2, .main-sidebar-subscribe p {
+  color: #fafafa;
+}
+
+.main-sidebar-subscribe button {
+  height: 2rem;
+  margin-top: 1rem;
+}

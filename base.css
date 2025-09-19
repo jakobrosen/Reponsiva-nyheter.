@@ -1,0 +1,118 @@
+:root {
+  --txt-color-1: #fafafa;
+  --txt-color-2: #dbdbdb;
+  --bg-color-1: #171717;
+  --bg-color-2: #0f0f0f;
+  --accent-color-1: #ff0000;
+  --accent-color-2: #950101;
+  --accent-color-3: #3d0000;
+  --border-color: #2b2b2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: var(--bg-color-2);
+}
+
+h1 {
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  color: var(--txt-color-1);
+}
+
+h1::after {
+  content: ".";
+  color: var(--accent-color-1);
+}
+
+h3,
+h4 {
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  color: var(--txt-color-1);
+  transition: 0.2s ease all;
+}
+
+p,
+h2 {
+  font-family: "Public sans", Arial, Helvetica, sans-serif;
+  color: var(--txt-color-1);
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+a {
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--txt-color-1);
+  transition: 0.2s ease all;
+}
+
+a svg {
+  fill: var(--txt-color-1);
+  transition: 0.2s ease all;
+}
+
+a:hover {
+  color: var(--accent-color-1);
+  transition: 0.2s ease all;
+  flex: none;
+}
+
+a:hover svg {
+  fill: var(--accent-color-1);
+  transition: 0.2s ease all;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+hr {
+  border: none;
+  background: var(--txt-color-2);
+  height: 1px;
+}
+
+@media (max-width: 760px) {
+  .big-screens {
+    display: none;
+  }
+  .small-screens {
+    display: flex;
+  }
+  .footer-top div {
+    width: 50%;
+  }
+  .footer-container {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 365px) {
+  .small-logo {
+    display: block;
+  }
+  .big-logo {
+    display: none;
+  }
+  .footer-top div {
+    width: 100%;
+  }
+}

@@ -212,3 +212,7 @@ nav {
   align-self: flex-end;
   width: 100%;
 }
+
+.active-sidebar-nav-link a {
+  color: var(--accent-color-1);
+}

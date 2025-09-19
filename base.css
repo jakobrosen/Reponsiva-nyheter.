@@ -50,11 +50,12 @@ h2 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 0.9483rem + 2.7586vw, 2.3rem);
 }
 
 p {
-  line-height: 1.4rem;
+  line-height: 1.2rem;
+  font-size: clamp(0.9rem, 0.8448rem + 0.2759vw, 1rem);
 }
 
 a {

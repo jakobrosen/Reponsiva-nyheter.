@@ -49,6 +49,10 @@ h2 {
   color: var(--txt-color-1);
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 p {
   line-height: 1.4rem;
 }
@@ -91,28 +95,41 @@ hr {
 
 @media (max-width: 760px) {
   .big-screens {
-    display: none;
+    display: none !important;
   }
   .small-screens {
-    display: flex;
+    display: flex !important;
   }
   .footer-top div {
-    width: 50%;
+    width: 50% !important;
   }
   .footer-container {
-    width: 100%;
-    min-width: 0;
+    width: 100% !important;
+    min-width: 0 !important; 
+  }
+  .footer-top div {
+    padding: 1rem !important;
+  }
+  main {
+    width: 100vw !important;
+    max-width: none !important;
+    min-width: 220px !important;
+    margin-top: 3rem !important;
+  }
+  .main-feed {
+    width: 100% !important;
+    margin: 0.5rem !important;
   }
 }
 
 @media (max-width: 365px) {
   .small-logo {
-    display: block;
+    display: block !important;
   }
   .big-logo {
-    display: none;
+    display: none !important;
   }
   .footer-top div {
-    width: 100%;
+    width: 100% !important;
   }
 }

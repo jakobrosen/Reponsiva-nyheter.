@@ -1,0 +1,27 @@
+.main-feed-article:hover {
+  border-color: var(--border-color);
+  transition: 0.2s ease all;
+}
+
+.main-feed-article:hover h2 {
+  color: var(--txt-color-1);
+  transition: 0.2s ease all;
+}
+
+.active-article-author-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.5rem 0;
+}
+
+.active-article-main-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.active-article-main-txt p {
+  color: var(--txt-color-1);
+}

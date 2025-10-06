@@ -20,6 +20,14 @@ main {
   color: var(--txt-color-1);
 }
 
+.breadcrumb a:hover {
+  color: var(--accent-color-1);
+}
+
+.breadcrumb a:last-of-type:hover {
+  color: var(--txt-color-1);
+}
+
 .main-content-container {
   display: flex;
   margin-top: 0.5rem;

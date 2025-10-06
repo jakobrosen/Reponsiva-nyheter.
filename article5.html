@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsiva nyheter.</title>
+    <title>Undergången är äntligen här</title>
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="button.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="article.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,9 +70,9 @@
             </section>
             <section class="big-nav-bottom-center">
               <ul class="big-nav-links">
-                <li class="active-nav-link"><a href="/index.html">Start</a></li>
+                <li><a href="/index.html">Start</a></li>
                 <li><a href="/ekonomi.html">Ekonomi</a></li>
-                <li><a href="/nöje.html">Nöje</a></li>
+                <li class="active-nav-link"><a href="/nöje.html">Nöje</a></li>
                 <li><a href="/världen.html">Världen</a></li>
                 <li><a href="/sport.html">Sport</a></li>
                 <li><a href="/vetenskap.html">Vetenskap</a></li>
@@ -120,8 +121,8 @@
               <aside class="nav-sidebar">
                 <div></div>
                 <ul>
-                  <li class="active-sidebar-nav-link"><a href="/index.html">Start</a></li>
-                  <li><a href="/ekonomi.html">Ekonomi</a></li>
+                  <li><a href="/index.html">Start</a></li>
+                  <li class="active-sidebar-nav-link"><a href="/ekonomi.html">Ekonomi</a></li>
                   <li><a href="/nöje.html">Nöje</a></li>
                   <li><a href="/världen.html">Världen</a></li>
                   <li><a href="/sport.html">Sport</a></li>
@@ -180,32 +181,50 @@
       </nav>
     </header>
     <main>
+      <span class="breadcrumb"><a href="/index.html">Start</a><p>➔</p><a href="/ekonomi.html">Ekonomi</a><p>➔</p><a>Undergången är äntligen här</a></span>
       <section class="main-content-container">
         <section class="main-feed">
-        <article class="main-feed-article" onclick="location.href='/article1.html';" style="cursor: pointer;">
-          <p class="article-category">Världen</p>
-          <img src="/images/article9.jpg">
+          <article class="main-feed-article active-article">
+          <img src="/images/article2.jpg">
           <div>
-            <h2>Poliser har ställt sig på rad</h2>
-            <p>Det är en syn som får blodet att isa sig och hjärtan att slå i otakt. I den kyliga kvällsluften har något ofattbart inträffat – poliser har ställt sig på rad.</p>
+            <h2>Undergången är äntligen här</h2> <hr>
+            <span class="active-article-author-txt">
+              <h4>Skribent: ChatGPT</h4>
+              <p>Publicerad: 13:21 - 14 September</p>
+            </span>
+            <section class="active-article-main-txt">
+              <p>Undergången är nu ett faktum. Efter år av spekulationer, varningar och gissningar har det slutligen hänt. Många hade pratat om det, men få trodde att det faktiskt skulle bli verklighet.</p>  
+
+              <p>Det började tidigt på morgonen. Himlen fick en märklig färg som ingen riktigt kunde beskriva. Fåglarna slutade låta, och vinden stod stilla. Flera personer rapporterade att de kände “en känsla av slut” i luften.</p>  
+                          
+              <p>Vid lunchtid bekräftades det: undergången var här. Myndigheter gick ut med korta meddelanden, men de flesta innehöll ingen ny information.</p>  
+                          
+              <p>– Det verkar vara undergången, ja, säger en person som stod utomhus när det hände.</p>  
+                          
+              <p>Många har reagerat olika. Vissa har försökt fortsätta sina vardagliga sysslor. Andra har satt sig ner. Några har börjat gå långsamt utan mål. Det har varit både tyst och rörigt på samma gång.</p>  
+                          
+              <p>Ett vittne beskriver stämningen som “lite obekväm men inte panikartad”. Ett annat säger att det känns som en söndag, fast allting har tagit slut.</p>  
+                          
+              <p>Flera experter har försökt förklara undergången, men ingen har lyckats riktigt. Några tror att det handlar om vädret. Andra menar att det bara var en tidsfråga.</p>  
+                          
+              <p>Butiker håller fortfarande öppet, även om kunderna uppges vara få. Kollektivtrafiken går, men ingen verkar veta vart.</p>  
+                          
+              <p>Det är ännu oklart om undergången kommer att pågå länge eller om det bara är för idag.</p>  
+                          
+              <p>Enligt flera källor är stämningen nu lugn men oviss. Många väntar på besked.</p>  
+                          
+              <p>Det finns i nuläget ingen plan för vad som händer efter undergången.</p>
+            </section>
           </div>
         </article>
         <div class="article-stack small-screens">
-          <h3>Senaste artiklarna</h3>
+          <h3>Relaterade artiklar</h3>
           <hr>
-          <article>
-            <img src="/images/article10.jpg">
+          <article onclick="location.href='/article3.html';">
+            <img src="/images/article11.jpg">
             <div class="article-stack-txt">
-              <h4>En grabb har använt ett mikroskop</h4>
-              <p>12:50 - 15 September</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article3.jpg">
-            <div class="article-stack-txt">
-              <h4>Tydligen kan man cykla på Saturnus</h4>
-              <p>13:21 - 14 September</p>
+              <h4>Guide: Så knyter du skorna</h4>
+              <p>10:10 - 12 Augusti</p>
             </div>
           </article>
           <hr>
@@ -213,23 +232,7 @@
             <img src="/images/article4.jpg">
             <div class="article-stack-txt">
               <h4>Så gömmer du pengar i en låda</h4>
-              <p>09:39 - 14 September</p>
-            </div>
-          </article>
-          <hr>
-          <article onclick="location.href='/article7.html';">
-            <img src="/images/article5.jpg">
-            <div class="article-stack-txt">
-              <h4>Här är en bild på en kossa</h4>
-              <p>18:14 - 13 September</p>
-            </div>
-          </article>
-          <hr>
-          <article onclick="location.href='/article2.html';">
-            <img src="/images/article1.jpg">
-            <div class="article-stack-txt">
-              <h4>Bosse har blivit förbannad</h4>
-              <p>15:21 - 12 September</p>
+              <p>13:21 - 14 September</p>
             </div>
           </article>
         </div>
@@ -238,210 +241,14 @@
           <p>Prenumerera nu för att få tillgång till alla artiklar utan reklam.</p>
           <button>Läs mer</button>
         </div>
-        <article class="main-feed-article" onclick="location.href='/article2.html';" style="cursor: pointer;">
-          <img src="/images/article1.jpg">
-          <div>
-            <p class="article-category">Världen</p>
-            <h2>Bosse har blivit förbannad</h2>
-            <p>Bosse har blivit förbannad. Händelsen inträffade under torsdagseftermiddagen, i vad som annars beskrivs som en helt vanlig dag.</p>
-          </div>
-        </article>
         <div class="article-stack small-screens">
-          <h3>Mest lästa</h3>
+          <h3>Mest lästa världen</h3>
           <hr>
-          <article onclick="location.href='/article3.html';">
-            <img src="/images/article11.jpg">
-            <div class="article-stack-txt">
-              <h4>Guide: Så knyter du skorna</h4>
-              <p>12 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article6.jpg">
-            <div class="article-stack-txt">
-              <h4>Cool bild på ett kretskort</h4>
-              <p>11 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article7.jpg">
-            <div class="article-stack-txt">
-              <h4>Grabbarna har spelat hockey igen</h4>
-              <p>25 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article8.jpg">
-            <div class="article-stack-txt">
-              <h4>Henke har dålig ekonomi</h4>
-              <p>35 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
+          <article onclick="location.href='/article1.html';">
             <img src="/images/article9.jpg">
             <div class="article-stack-txt">
               <h4>Poliser har ställt sig på rad</h4>
               <p>1 Augusti - 2025</p>
-            </div>
-          </article>
-        </div>
-        <article class="main-feed-article" onclick="location.href='/article5.html';" style="cursor: pointer;">
-          <img src="/images/article2.jpg">
-          <div>
-            <p class="article-category">Nöje</p>
-            <h2>Undergången är äntligen här</h2>
-            <p>Undergången är nu ett faktum. Efter år av spekulationer, varningar och gissningar har det slutligen hänt. Många hade pratat om det, men få trodde att det faktiskt skulle bli verklighet.</p>
-          </div>
-        </article>
-        <div class="article-stack small-screens">
-          <h3>Bokrecensioner</h3>
-          <hr>
-          <article>
-            <img src="/images/book1.jpg">
-            <div class="article-stack-txt">
-              <h4>"17 Juni" - Alex Schulman</h4>
-              <p>12 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book2.png">
-            <div class="article-stack-txt">
-              <h4>"Stacken" - Annika Norlin</h4>
-              <p>11 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book3.jpg">
-            <div class="article-stack-txt">
-              <h4>"Läs" - Katarina Kuick</h4>
-              <p>25 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book4.jpg">
-            <div class="article-stack-txt">
-              <h4>"Hyper" - Agri Ismaïl</h4>
-              <p>35 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book5.jpg">
-            <div class="article-stack-txt">
-              <h4>"Yellowface" - R. F. Kuang</h4>
-              <p>1 Juli - 2025</p>
-            </div>
-          </article>
-        </div>
-        <article class="main-feed-article" onclick="location.href='/article6.html';" style="cursor: pointer;">
-          <img src="/images/article3.jpg">
-          <div>
-            <p class="article-category">Vetenskap</p>
-            <h2>Tydligen kan man cykla på Saturnus</h2>
-            <p>Det sägs att man kan cykla på Saturnus. Nyheten har spridits
-                  snabbt, men det finns fortfarande många frågor kring hur det
-                  skulle gå till.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='#';" style="cursor: pointer;">
-          <img src="/images/article4.jpg">
-          <div>
-            <p class="article-category">Ekonomi</p>
-            <h2>Så gömmer du pengar i en låda</h2>
-            <p>Att gömma pengar i en låda är ett enkelt och ofta effektivt sätt att förvara dem på. Det kräver ingen avancerad utrustning, bara lite planering och en låda.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='/article7.html';" style="cursor: pointer;">
-          <img src="/images/article5.jpg">
-          <div>
-            <p class="article-category">Nöje</p>
-            <h2>Här är en bild på en kossa</h2>
-            <p>Det sägs att man kan cykla på Saturnus. Nyheten har spridits
-                  snabbt, men det finns fortfarande många frågor kring hur det
-                  skulle gå till.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='/article8.html';" style="cursor: pointer;">
-          <img src="/images/article6.jpg">
-          <div>
-            <p class="article-category">Teknologi</p>
-            <h2>Cool bild på ett kretskort</h2>
-            <p>Under fredagseftermiddagen väckte en ovanlig syn uppmärksamhet bland förbipasserande i stadens centrum. Ett antal poliser placerade sig i en rak formation längs med torget, vilket snabbt drog till sig både nyfikna blickar och spekulationer.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='/article9.html';" style="cursor: pointer;">
-          <img src="/images/article7.jpg">
-          <div>
-            <p class="article-category">Sport</p>
-            <h2>Grabbarna har spelat hockey igen</h2>
-            <p>Under fredagseftermiddagen väckte en ovanlig syn uppmärksamhet bland förbipasserande i stadens centrum. Ett antal poliser placerade sig i en rak formation längs med torget, vilket snabbt drog till sig både nyfikna blickar och spekulationer.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='/article10.html';" style="cursor: pointer;">
-          <img src="/images/article8.jpg">
-          <div>
-            <p class="article-category">Ekonomi</p>
-            <h2>Henke har dålig ekonomi</h2>
-            <p>Under fredagseftermiddagen väckte en ovanlig syn uppmärksamhet bland förbipasserande i stadens centrum. Ett antal poliser placerade sig i en rak formation längs med torget, vilket snabbt drog till sig både nyfikna blickar och spekulationer.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='/article11.html';" style="cursor: pointer;">
-          <img src="/images/article10.jpg">
-          <div>
-            <p class="article-category">Vetenskap</p>
-            <h2>En grabb har använt ett mikroskop</h2>
-            <p>Under fredagseftermiddagen väckte en ovanlig syn uppmärksamhet bland förbipasserande i stadens centrum. Ett antal poliser placerade sig i en rak formation längs med torget, vilket snabbt drog till sig både nyfikna blickar och spekulationer.</p>
-          </div>
-        </article>
-        <article class="main-feed-article" onclick="location.href='/article3.html';" style="cursor: pointer;">
-          <img src="/images/article11.jpg">
-          <div>
-            <p class="article-category">Teknologi</p>
-            <h2>Guide: Så knyter du skorna</h2>
-            <p>Att knyta skorna är en viktig del av vardagen. Det gör att skorna sitter bättre på fötterna och minskar risken att man snubblar.</p>
-          </div>
-        </article>
-      </section>
-      <aside class="main-sidebar big-screens">
-        <div class="article-stack">
-          <h3>Senaste artiklarna</h3>
-          <hr>
-          <article>
-            <img src="/images/article10.jpg">
-            <div class="article-stack-txt">
-              <h4>En grabb har använt ett mikroskop</h4>
-              <p>12:50 - 15 September</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article3.jpg">
-            <div class="article-stack-txt">
-              <h4>Tydligen kan man cykla på Saturnus</h4>
-              <p>13:21 - 14 September</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article4.jpg">
-            <div class="article-stack-txt">
-              <h4>Så gömmer du pengar i en låda</h4>
-              <p>09:39 - 14 September</p>
-            </div>
-          </article>
-          <hr>
-          <article onclick="location.href='/article7.html';">
-            <img src="/images/article5.jpg">
-            <div class="article-stack-txt">
-              <h4>Här är en bild på en kossa</h4>
-              <p>18:14 - 13 September</p>
             </div>
           </article>
           <hr>
@@ -449,7 +256,28 @@
             <img src="/images/article1.jpg">
             <div class="article-stack-txt">
               <h4>Bosse har blivit förbannad</h4>
-              <p>15:21 - 12 September</p>
+              <p>12 September - 2025</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <aside class="main-sidebar big-screens">
+        <div class="article-stack">
+          <h3>Relaterade artiklar</h3>
+          <hr>
+          <article onclick="location.href='/article3.html';">
+            <img src="/images/article11.jpg">
+            <div class="article-stack-txt">
+              <h4>Guide: Så knyter du skorna</h4>
+              <p>10:10 - 12 Augusti</p>
+            </div>
+          </article>
+          <hr>
+          <article onclick="location.href='/article4.html';">
+            <img src="/images/article4.jpg">
+            <div class="article-stack-txt">
+              <h4>Så gömmer du pengar i en låda</h4>
+              <p>13:21 - 14 September</p>
             </div>
           </article>
         </div>
@@ -459,88 +287,21 @@
           <button>Läs mer</button>
         </div>
         <div class="article-stack">
-          <h3>Mest lästa</h3>
+          <h3>Mest lästa världen</h3>
           <hr>
-          <article onclick="location.href='/article3.html';">
-            <img src="/images/article11.jpg">
-            <div class="article-stack-txt">
-              <h4>Guide: Så knyter du skorna</h4>
-              <p>12 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article6.jpg">
-            <div class="article-stack-txt">
-              <h4>Cool bild på ett kretskort</h4>
-              <p>11 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article7.jpg">
-            <div class="article-stack-txt">
-              <h4>Grabbarna har spelat hockey igen</h4>
-              <p>25 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/article8.jpg">
-            <div class="article-stack-txt">
-              <h4>Henke har dålig ekonomi</h4>
-              <p>35 Augusti - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
+          <article onclick="location.href='/article1.html';">
             <img src="/images/article9.jpg">
             <div class="article-stack-txt">
               <h4>Poliser har ställt sig på rad</h4>
               <p>1 Augusti - 2025</p>
             </div>
           </article>
-        </div>
-        <div class="article-stack">
-          <h3>Bokrecensioner</h3>
           <hr>
-          <article>
-            <img src="/images/book1.jpg">
+          <article onclick="location.href='/article2.html';">
+            <img src="/images/article1.jpg">
             <div class="article-stack-txt">
-              <h4>"17 Juni" - Alex Schulman</h4>
-              <p>12 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book2.png">
-            <div class="article-stack-txt">
-              <h4>"Stacken" - Annika Norlin</h4>
-              <p>11 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book3.jpg">
-            <div class="article-stack-txt">
-              <h4>"Läs" - Katarina Kuick</h4>
-              <p>25 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book4.jpg">
-            <div class="article-stack-txt">
-              <h4>"Hyper" - Agri Ismaïl</h4>
-              <p>35 Juli - 2025</p>
-            </div>
-          </article>
-          <hr>
-          <article>
-            <img src="/images/book5.jpg">
-            <div class="article-stack-txt">
-              <h4>"Yellowface" - R. F. Kuang</h4>
-              <p>1 Juli - 2025</p>
+              <h4>Bosse har blivit förbannad</h4>
+              <p>12 September - 2025</p>
             </div>
           </article>
         </div>
@@ -580,7 +341,7 @@
             <hr />
             <ul>
               <li><a href="#">Kontakt</a></li>
-              <li><a href="#">Kundservice</a></li>
+              <li><a href="#">Kundservice</a></li> 
               <li><a href="#">Upphovsrätt</a></li>
               <li><a href="#">Bli prenumerant</a></li>
               <li><a href="#">Min prenumeration</a></li>
@@ -601,7 +362,7 @@
         <section class="footer-bottom">
           <hr>
           <h1>Responsiva nyheter</h1>
-          <p>© 2025 Responsiva Nyheter AB</p>
+          <p>© 2025 Responsiva Nyheter AB</p> 
         </section>
       </section>
     </footer>

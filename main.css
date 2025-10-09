@@ -73,6 +73,7 @@ main {
 }
 
 .main-feed-article h2 {
+  font-family: 'Lexend', Arial, Helvetica, sans-serif;
   padding-bottom: 0.6rem;
   transition: 0.2s ease all;
 }
@@ -169,6 +170,10 @@ main {
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
+}
+
+.subscribe-item h2 {
+  font-family: 'Lexend', Arial, Helvetica, sans-serif;
 }
 
 .subscribe-item h2, .subscribe-item p {
